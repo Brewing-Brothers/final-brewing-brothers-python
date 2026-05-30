@@ -219,7 +219,7 @@ KLAVIYO_API_KEY=                     # Email marketing (Phase 3)
 
 ## BUILD STATUS (updated by Execution Sherpa after each build)
 
-- **Live URL:** https://shameless-brews-funnel-5nkybq6b2.vercel.app
+- **Live URL:** https://shameless-brews-funnel-ae5bl71ef.vercel.app
 - **GitHub repo:** https://github.com/Brewing-Brothers/shameless-brews-funnel
 - **Vercel project:** shameless-brews-funnel
 - **Google Sheet:** Shameless Brews Orders (Reservations + Subscribers tabs)
