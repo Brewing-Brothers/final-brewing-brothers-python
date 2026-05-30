@@ -40,7 +40,7 @@ No additives. No sugar. No preservatives. No water added. 100% real juice.
 
 ### Flavors (showcase all 5)
 - Naval Orange
-- Carra Carra Orange
+- Cara Cara Orange
 - Meyer Lemon
 - Honey Tangerine
 - Red Ruby Grapefruit
