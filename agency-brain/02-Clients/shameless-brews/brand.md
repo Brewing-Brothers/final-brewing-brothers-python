@@ -185,8 +185,9 @@ CF-P5 → CF-P1 → Benefits → CF-P12 → CF-P4 → CF-P3 → CF-P2 → CF-P7 
 | Phase 1 — MVP funnel + pickup form | ✅ DEPLOYED |
 | Phase 2 — Stripe + wallets (Apple Pay, PayPal, Square) | ✅ LIVE (test mode) |
 | Phase 3A — Klaviyo subscriber sync (lead magnet → list) | ✅ COMPLETE |
-| Phase 3B — Klaviyo welcome sequence (3-email flow) | ⏳ QUEUED |
-| Phase 4 — Subscription / recurring flow | ⏳ QUEUED |
+| Phase 3B — Klaviyo event tracking + welcome flow | ✅ COMPLETE |
+| Phase 3 — ALL MILESTONES | ✅ COMPLETE (2026-05-31) |
+| Phase 4 — Production launch (DNS + Stripe live mode) | ⏳ QUEUED |
 
 **Phase 1 payment mode:** `STRIPE_ENABLED=false` — pickup reservation only
 **Phase 2 payment mode:** `STRIPE_ENABLED=true` — Stripe test mode LIVE (all 3 tiers active)
@@ -212,9 +213,9 @@ STRIPE_PRICE_SIXPACK=price_xxxx      # $45 product
 STRIPE_WEBHOOK_SECRET=whsec_xxxx
 NEXT_PUBLIC_STRIPE_ENABLED=false     # Flip to 'true' AFTER all above are set
 
-# Phase 3A — Klaviyo (LIVE)
-KLAVIYO_API_KEY=pk_YcbNyS_****       # Full read/write, all scopes — set in Vercel
-KLAVIYO_LIST_ID=UVC4Rw               # Shameless Brews Subscribers list
+# Phase 3 — Klaviyo (LIVE — all verified 2026-05-31)
+KLAVIYO_API_KEY=pk_YcbNyS_****       # Full read/write, all scopes — corrected 2026-05-31 (was set to wrong value initially)
+KLAVIYO_LIST_ID=UVC4Rw               # Shameless Brews Subscribers — was empty initially, corrected 2026-05-31
 ```
 
 ---
@@ -234,3 +235,4 @@ KLAVIYO_LIST_ID=UVC4Rw               # Shameless Brews Subscribers list
 *Phase 1 MVP fully operational. Forms tested and verified on 2026-05-29.*
 *Phase 2 Stripe checkout LIVE in test mode as of 2026-05-29. All 3 tiers working. Thank-you redirect fixed 2026-05-30.*
 *Phase 3A complete 2026-05-31. Lead magnet dual-writes to Google Sheets Subscribers tab + Klaviyo list UVC4Rw.*
+*Phase 3 COMPLETE 2026-05-31. Order Placed + Checkout Abandoned events live. Welcome flow QWEZ8W built (Draft). Thank-you upsell live (commit 8fec66f). All 4 M3.10 tests passed.*
